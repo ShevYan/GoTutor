@@ -188,18 +188,18 @@ func init() {
 ```
 
 ## 综合使用flag和viper
-1. 添加.cobra-example.yaml
+* 添加.cobra-example.yaml
 ```
 author: ShevYan
 ```
-2. 添加flag解析
+* 添加flag解析
 ```Go
 func init() {
 	...
 	RootCmd.PersistentFlags().Parsed()
 }
 ```
-3. 添加author变量
+* 添加author变量
 ```Go
 var author string
 // initConfig reads in config file and ENV variables if set.
@@ -210,7 +210,7 @@ func initConfig() {
 	author = viper.GetString("author")
 }
 ```
-4. 打印参数
+* 打印参数
 ```Go
 // This represents the base command when called without any subcommands
 var RootCmd = &cobra.Command{
