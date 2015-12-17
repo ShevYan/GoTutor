@@ -25,7 +25,10 @@ pflag是flag扩展,主要是加入了对短参数的支持.
 	pflag.IntVarP(&p2, "intflag", "i", 12345, "test pflag for int.")
 ```
 
+##程序运行结果
 ```sh
+$ go run main.go
+
 Usage of /private/var/folders/98/pmb6b_8x5w5319m9ts6h6z6m0000gn/T/Build main.go and run1go:
   -i, --intflag=12345: test pflag for int.
   -s, --stringflag="test-p-flag-string": test pflag for string.
