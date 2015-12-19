@@ -13,3 +13,6 @@
 
 ### cobra
 [cobra-example](cobra-example), cobra是一个命令行框架生成和解析的工具包，可以用来生成多级的命令工程。
+
+### go zookeeper client
+[zk-example](zk-example), go zookeeper client使用的例子。
